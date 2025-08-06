@@ -6,5 +6,13 @@ const initialState = {
   },
 };
 
-// lo stato attuale e quello futuro
-const mainReducer = (state = initialState, action) => {};
+const mainReducer = (state = initialState, action) => {
+  switch (action.type) {
+    default:
+      // in caso il type non è stato riconosciuto
+      return state;
+    //   ritorniamo lo state iniziale
+  }
+};
+
+export default mainReducer;
